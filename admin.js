@@ -11,7 +11,7 @@ const btnLogin = document.getElementById('btn-login');
 const tableBody = document.getElementById('table-body');
 const detailPanel = document.getElementById('detail-panel');
 
-const API_BASE = window.location.protocol === 'file:' ? 'http://localhost:8080' : '';
+const API_BASE = 'https://retraite-2026.onrender.com';
 
 function getToken() {
   return sessionStorage.getItem(TOKEN_KEY);

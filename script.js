@@ -1,5 +1,5 @@
 const PARTICIPATION_PRICE = 5000;
-const API_BASE = window.location.protocol === 'file:' ? 'http://localhost:8080' : '';
+const API_BASE = 'https://retraite-2026.onrender.com';
 
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
