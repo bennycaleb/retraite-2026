@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Le fer aiguise le fer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-page">
+    <!-- Login -->
+    <div class="login-panel" id="login-panel">
+      <div class="login-card">
+        <h1>Administration</h1>
+        <p>Le fer aiguise le fer — Gestion des inscriptions</p>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" placeholder="Mot de passe admin" autocomplete="current-password" required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="btn-login">Se connecter</button>
+          <p class="login-error" id="login-error" hidden>Mot de passe incorrect</p>
+          <p class="login-error" id="server-error" hidden></p>
+        </form>
+        <a href="index.html" class="back-link">← Retour au site</a>
+      </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard is-hidden" id="dashboard">
+      <header class="admin-header">
+        <div>
+          <h1>Inscriptions</h1>
+          <p>Gérez les paiements et exportez le CSV</p>
+        </div>
+        <div class="admin-actions">
+          <button class="btn btn-outline" id="btn-export">Exporter Excel</button>
+          <button class="btn btn-outline" id="btn-refresh">Actualiser</button>
+          <button class="btn btn-ghost" id="btn-logout">Déconnexion</button>
+        </div>
+      </header>
+
+      <div class="stats-bar">
+        <div class="stat-card">
+          <span class="stat-value" id="stat-total">0</span>
+          <span class="stat-label">Total inscriptions</span>
+        </div>
+        <div class="stat-card pending">
+          <span class="stat-value" id="stat-pending">0</span>
+          <span class="stat-label">En attente</span>
+        </div>
+        <div class="stat-card paid">
+          <span class="stat-value" id="stat-paid">0</span>
+          <span class="stat-label">Payé</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-revenue">0 ₽</span>
+          <span class="stat-label">Revenus confirmés</span>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="En attente">En attente</button>
+        <button class="filter-btn" data-filter="Payé">Payé</button>
+      </div>
+
+      <div class="table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Nom</th>
+              <th>Contact</th>
+              <th>Total</th>
+              <th>Preuve</th>
+              <th>Statut</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <tr><td colspan="7" class="empty">Chargement...</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="detail-panel" id="detail-panel" hidden>
+        <div class="detail-header">
+          <h2 id="detail-name"></h2>
+          <button class="detail-close" id="detail-close">×</button>
+        </div>
+        <div class="detail-body" id="detail-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

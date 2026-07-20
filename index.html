@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le fer aiguise le fer — Retraite Spirituelle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <nav class="nav" id="nav">
+    <a href="#accueil" class="nav-logo">La Grande Retraite d’Été</a>
+    <div class="nav-pill">Retraite 2026</div>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="poster-shell">
+    <div class="poster-frame">
+      <div class="poster-hero-photo" aria-hidden="true"></div>
+      <div class="poster-overlay">
+        <header class="poster-header" id="accueil">
+          <div class="poster-badge">RETRAITE SPIRITUELLE</div>
+          <h1>La Grande Retraite d’Été</h1>
+          <p>Deux églises se mettent à part pour chercher Dieu dans un temps de prière, de méditation de la Parole, d’adoration et de communion fraternelle.</p>
+        </header>
+
+        <section class="poster-grid">
+          <div class="poster-main">
+            <article class="poster-card large">
+              <div class="poster-date">20–23 août 2026 · 4 jours</div>
+              <h2>Une retraite de communion entre deux églises</h2>
+              <p>Un temps consacré à chercher Dieu, à travers la prière, la méditation de la Parole, l’adoration et la communion fraternelle, dans un cadre paisible et propice au ressourcement spirituel.</p>
+            </article>
+            <article class="poster-card compact-panel">
+              <h3>Informations</h3>
+              <ul>
+                <li><strong>Organisateurs :</strong> La Nouvelle Jérusalem & Communauté Évangélique de Moscou</li>
+                <li><strong>Transport :</strong> transport en bus compris</li>
+                <li><strong>Prix :</strong> 5 000 ₽ par personne</li>
+                <li><strong>Inclus :</strong> gîte, repas et transport</li>
+              </ul>
+            </article>
+            <article class="poster-card quote-card poster-quote" id="programme">
+              <span class="quote-mark">“</span>
+              <p>« Deux églises se mettent à part pour chercher Dieu. »</p>
+              <div class="program-list">
+                <div class="program-item">« Approchez-vous de Dieu, et il s'approchera de vous. »</div>
+                <div class="program-item">Jacques 4:8</div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="poster-signup" id="inscription">
+          <div class="signup-copy">
+            <div class="poster-badge">Inscription</div>
+            <h2>Réserver sa place</h2>
+            <p>Le formulaire ci-dessous permet de valider votre participation, d’ajouter votre aide et d’envoyer la preuve de paiement.</p>
+          </div>
+
+          <form class="inscription-form" id="inscription-form" novalidate>
+            <div class="form-steps">
+              <div class="form-step-item active" data-step-indicator="1"><span class="step-num">1</span><span class="step-label">Infos</span></div>
+              <div class="form-step-line"></div>
+              <div class="form-step-item" data-step-indicator="2"><span class="step-num">2</span><span class="step-label">Paiement</span></div>
+              <div class="form-step-line"></div>
+              <div class="form-step-item" data-step-indicator="3"><span class="step-num">3</span><span class="step-label">Attentes</span></div>
+              <div class="form-step-line"></div>
+              <div class="form-step-item" data-step-indicator="4"><span class="step-num">4</span><span class="step-label">Preuve</span></div>
+            </div>
+
+            <div class="form-step active" data-step="1">
+              <h3 class="form-step-title">Vos informations</h3>
+              <div class="form-row">
+                <div class="form-group"><label for="prenom">Prénom</label><input type="text" id="prenom" name="prenom" placeholder="Marie" /></div>
+                <div class="form-group"><label for="nom">Nom</label><input type="text" id="nom" name="nom" placeholder="Dupont" /></div>
+              </div>
+              <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="marie.dupont@email.com" /></div>
+              <div class="form-group"><label for="telephone">Téléphone</label><input type="tel" id="telephone" name="telephone" placeholder="+7 900 123 45 67" /></div>
+              <div class="form-group"><label for="remarques">Remarques (régime alimentaire, etc.)</label><textarea id="remarques" name="remarques" rows="3" placeholder="Végétarien, allergies..."></textarea></div>
+              <div class="form-group checkbox-group"><input type="checkbox" id="cgv" name="cgv" /><label for="cgv">J'accepte les conditions générales et la politique de confidentialité.</label></div>
+            </div>
+
+            <div class="form-step" data-step="2">
+              <h3 class="form-step-title">Participation & aide</h3>
+              <div class="price-box">
+                <div class="price-box-label">Participation à la retraite</div>
+                <div class="price-box-amount">5 000 <span>₽</span></div>
+                <p class="price-box-note">Montant demandé par personne pour cette retraite de 4 jours</p>
+              </div>
+              <div class="partner-section">
+                <div class="partner-toggle form-group checkbox-group">
+                  <input type="checkbox" id="partner-toggle" name="partner-toggle" />
+                  <label for="partner-toggle">
+                    <strong>Devenir partenaire de l’événement</strong>
+                    <span>Choisissez un montant de soutien : 500 ₽, 1 000 ₽, 1 500 ₽, 2 000 ₽, jusqu’à 10 000 ₽</span>
+                  </label>
+                </div>
+                <div class="partner-amounts" id="partner-amounts" hidden>
+                  <div class="partner-amounts-label">Choisissez votre soutien</div>
+                  <div class="amount-grid">
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="500" />
+                      <span>500 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="1000" />
+                      <span>1 000 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="1500" />
+                      <span>1 500 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="2000" />
+                      <span>2 000 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="2500" />
+                      <span>2 500 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="3000" />
+                      <span>3 000 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="4000" />
+                      <span>4 000 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="5000" />
+                      <span>5 000 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="6000" />
+                      <span>6 000 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="7000" />
+                      <span>7 000 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="8000" />
+                      <span>8 000 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="9000" />
+                      <span>9 000 ₽</span>
+                    </label>
+                    <label class="amount-option">
+                      <input type="radio" name="partner-amount" value="10000" />
+                      <span>10 000 ₽</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="total-preview" id="total-preview"><span>Montant à payer</span><strong id="total-amount">5 000 ₽</strong></div>
+            </div>
+
+            <div class="form-step" data-step="3">
+              <h3 class="form-step-title">Vos attentes pour la retraite</h3>
+              <p class="form-step-desc">Dites-nous ce que vous espérez vivre, recevoir ou approfondir durant cette semaine de retraite.</p>
+              <div class="form-group"><label for="attentes">Quelles sont vos attentes ?</label><textarea id="attentes" name="attentes" rows="6" placeholder="Ex : approfondir ma relation avec Dieu, vivre un temps de silence, renforcer ma foi, rencontrer d'autres jeunes..."></textarea></div>
+            </div>
+
+            <div class="form-step" data-step="4">
+              <h3 class="form-step-title">Paiement & preuve</h3>
+              <p class="form-step-desc">Effectuez le virement, puis envoyez la capture de confirmation. Votre inscription sera validée après réception de la preuve de paiement.</p>
+              <div class="payment-details payment-details-inline">
+                <div class="payment-row"><span>Montant total</span><strong id="payment-total-step">5 000 ₽</strong></div>
+                <div class="payment-row"><span>Téléphone du destinataire</span><strong>+7 (905) 535-04-31</strong></div>
+                <div class="payment-row"><span>Banque du destinataire</span><strong>Т-Банк (T-Bank)</strong></div>
+                <div class="payment-row"><span>Nom du destinataire</span><strong>Майд Дайка Ж.</strong></div>
+              </div>
+              <div class="proof-upload" id="proof-upload">
+                <div class="form-group">
+                  <label for="capture">Capture de paiement <span class="required-star">*</span></label>
+                  <label for="capture" class="capture-label">
+                    <input type="file" id="capture" name="capture" accept="image/*" required />
+                    <span class="capture-btn">Choisir une image</span>
+                    <span class="capture-name" id="capture-name">Aucun fichier choisi</span>
+                  </label>
+                </div>
+                <div class="capture-preview" id="capture-preview" hidden><img id="capture-img" alt="Aperçu de la capture" /></div>
+              </div>
+            </div>
+
+            <div class="form-payment" id="form-payment" hidden>
+              <div class="payment-success-icon">✓</div>
+              <h3>Inscription enregistrée</h3>
+              <p class="payment-intro">Merci ! Votre inscription et votre preuve de paiement ont bien été reçues. L'organisateur confirmera votre place après vérification.</p>
+            </div>
+
+            <div class="form-nav" id="form-nav">
+              <button type="button" class="btn btn-outline" id="btn-prev" hidden>Précédent</button>
+              <button type="button" class="btn btn-primary" id="btn-next">Suivant</button>
+              <button type="submit" class="btn btn-primary" id="btn-submit" hidden>Envoyer</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <a href="admin.html?login" class="admin-corner-link">Admin</a>
+  <script src="script.js"></script>
+</body>
+</html>
