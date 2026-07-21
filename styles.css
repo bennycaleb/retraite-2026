@@ -472,3 +472,108 @@ ul { list-style: none; }
   .form-nav .btn { width: 100%; }
   .amount-grid { grid-template-columns: 1fr; }
 }
+
+/* Correction affichage mobile du champ image */
+.proof-upload input[type="file"] {
+  padding: 12px;
+  min-height: 55px;
+  line-height: 30px;
+}
+
+@media (max-width: 600px) {
+  .proof-upload input[type="file"] {
+    height: auto;
+    padding: 14px 10px;
+    display: block;
+  }
+
+  .proof-upload .form-group > label {
+    margin-bottom: 12px;
+  }
+}
+
+/* Correction mobile - zone upload preuve de paiement */
+.proof-upload {
+  width: 100%;
+}
+
+.proof-upload .form-group {
+  width: 100%;
+}
+
+.proof-upload input[type="file"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  margin-top: 10px;
+  min-height: 60px;
+}
+
+@media (max-width: 600px) {
+  .proof-upload input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 16px 10px;
+    margin-top: 12px;
+    line-height: 24px;
+  }
+
+  .proof-upload .form-group > label {
+    display: block;
+    margin-bottom: 14px;
+  }
+}
+
+
+/* Correction mobile zone capture de paiement */
+.capture-label {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  width: 100%;
+}
+
+.capture-label input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.capture-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.capture-name {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 8px;
+  padding: 10px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+@media (max-width: 600px) {
+  .capture-label {
+    gap: 16px;
+  }
+
+  .capture-btn {
+    min-height: 60px;
+    font-size: 16px;
+  }
+
+  .capture-name {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
